@@ -1,54 +1,50 @@
+# Climate App
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+Climate App is an iOS application developed by Priyanshu Singh using Swift. It provides users with weather information for various locations, helping them stay informed about the current and forecasted climate conditions.
 
-#  Clima
+## Features
 
-## Our Goal
+- Current weather: Displays the current weather conditions, including temperature, humidity, wind speed, etc., for a user-selected location.
+- Weather forecast: Provides a 5-day weather forecast for the selected location, allowing users to plan ahead.
+- Location-based weather: Automatically detects the user's current location and displays the weather information accordingly.
+- Clean and intuitive UI: Simple user interface design for easy navigation and usability.
 
-It’s time to take our app development skills to the next level. We’re going to introduce you to the wonderful world of Application Programming Interfaces (APIs) to grab live data from the internet. If you’re dreaming of making that Twitter-powered stock trading app then you’re about add some serious tools to your toolbelt!
+## Technologies Used
+
+- Swift: The primary programming language used for iOS app development.
+- Core Location: Framework for accessing and processing the device's location data.
+- URLSession: Used for making HTTP requests to fetch weather data from a weather API.
+- JSON decoding: Parse the JSON response from the weather API to extract relevant weather information.
+- UIKit: Framework for building the user interface components and interactions.
+
+## Installation
+
+1. Clone the repository to your local machine:
 
 
-## What you will create
+2. Open `Climate App.xcodeproj` in Xcode.
 
-By the end of the module, you will have made a beautiful, dark-mode enabled weather app. You'll be able to check the weather for the current location based on the GPS data from the iPhone as well as by searching for a city manually. 
+3. Build and run the project in Xcode.
 
-## What you will learn
+## Usage
 
-* How to create a dark-mode enabled app.
-* How to use vector images as image assets.
-* Learn to use the UITextField to get user input. 
-* Learn about the delegate pattern.
-* Swift protocols and extensions. 
-* Swift guard keyword. 
-* Swift computed properties.
-* Swift closures and completion handlers.
-* Learn to use URLSession to network and make HTTP requests.
-* Parse JSON with the native Encodable and Decodable protocols. 
-* Learn to use Grand Central Dispatch to fetch the main thread.
-* Learn to use Core Location to get the current location from the phone GPS. 
+- Upon launching the app, the current weather for your current location will be displayed.
+- You can search for weather information for specific locations by entering the city name or ZIP code.
+- The app provides a 5-day weather forecast, allowing you to plan your activities accordingly.
+- Swipe down to refresh the weather data and get the latest updates.
 
-### Condition Codes
-```
-switch conditionID {
-        case 200...232:
-            return "cloud.bolt"
-        case 300...321:
-            return "cloud.drizzle"
-        case 500...531:
-            return "cloud.rain"
-        case 600...622:
-            return "cloud.snow"
-        case 701...781:
-            return "cloud.fog"
-        case 800:
-            return "sun.max"
-        case 801...804:
-            return "cloud.bolt"
-        default:
-            return "cloud"
-        }
-```
+## Contributing
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+Contributions are welcome! If you'd like to contribute to Climate App, please fork the repository and submit a pull request with your changes.
 
-![End Banner](Documentation/readme-end-banner.png)
+## API Used
+
+- The application fetches weather data from the OpenWeatherMap API (https://openweathermap.org/api).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- This project was created by Priyanshu Singh and was inspired by the need for a simple and reliable weather application to help users stay informed about the weather conditions.
